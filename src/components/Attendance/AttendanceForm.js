@@ -19,6 +19,7 @@ const AttendanceForm = () => {
       className="form form--attendance"
       onSubmit={(event) => handleSubmit(event)}
     >
+      <p className="form__title">Confirme sua presença</p>
       <div className="input__container">
         <label htmlFor="name" className="input__title">
           Nome completo:

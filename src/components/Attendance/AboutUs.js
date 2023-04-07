@@ -8,6 +8,9 @@ const AboutUs = () => {
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
+      <a href="#" className="btn">
+        SAIBA MAIS
+      </a>
     </div>
   );
 };

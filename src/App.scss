@@ -8,11 +8,11 @@
 .btn {
   font: 300 2.4rem $text-content;
   border: none;
-  background-color: $light-brown;
-  color: #fff;
   padding: 1.2rem;
 
   &.btn--submit {
+    background-color: $light-brown;
+    color: #fff;
     &.enabled {
       pointer-events: all;
     }
@@ -105,8 +105,11 @@
 
     &.form--attendance {
       padding: 2.4rem;
-
       background-color: #fff;
+    }
+
+    .form__title {
+      font: 500 2.4rem $text-title;
     }
 
     .input__container {
@@ -121,5 +124,23 @@
   .details__container {
     padding: 2.4rem;
     gap: 1.2rem;
+
+    .btn {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        font: 300 1.6rem $text-content;
+        background-color: $light-brown;
+        color: #fff;
+        width: max-content;
+        align-self: flex-end;
+        transition: all 0.3s;
+      }
+
+      &:hover,
+      &:active {
+        margin: 0 0.6rem 0 0;
+      }
+    }
   }
 }
