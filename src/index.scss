@@ -6,21 +6,24 @@ $text-title: "Raleway", sans-serif;
 $text-subtitle-1: "Cormorant Garamond", serif;
 $text-content: "Nunito Sans", sans-serif;
 
+// $light-blue: #b4c6de;
+$light-blue: #98d0e0;
+$light-brown: #bb927e;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 62.75%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 130rem;
+  user-select: none;
 }

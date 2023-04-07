@@ -1,0 +1,125 @@
+// @use "/Users/lucasmigliori/Documents/Projetos/wedding/src/index";
+@import "./index.scss";
+
+.text {
+  font: 300 1.8rem $text-content;
+}
+
+.btn {
+  font: 300 2.4rem $text-content;
+  border: none;
+  background-color: $light-brown;
+  color: #fff;
+  padding: 1.2rem;
+
+  &.btn--submit {
+    &.enabled {
+      pointer-events: all;
+    }
+
+    &.disabled {
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+  .input__title {
+    font: 500 1.8rem $text-subtitle-1;
+  }
+
+  .text__input {
+    border: solid 1px #ddd;
+    padding: 1.2rem;
+    transition: all 0.3s;
+
+    &::placeholder {
+      font: 400 1.6rem $text-content;
+    }
+
+    &:focus {
+      outline: none;
+      border: solid 1px #98d0e0;
+    }
+  }
+}
+
+.details__container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+
+  .details__title {
+    font: italic 500 3.2rem $text-subtitle-1;
+  }
+
+  .details__text {
+  }
+}
+
+.section__hero {
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero__message {
+    padding: 4rem;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-family: $text-title;
+    font-size: 6rem;
+    color: #fff;
+    position: absolute;
+
+    backdrop-filter: blur(2px);
+  }
+
+  .hero__image {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.section__attendance {
+  padding: 1.2rem;
+  background-color: $light-blue;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    box-shadow: 0rem 0.4rem 0.6rem 0.4rem rgba(0, 0, 0, 0.2);
+
+    &.form--attendance {
+      padding: 2.4rem;
+
+      background-color: #fff;
+    }
+
+    .input__container {
+      gap: 0.4rem;
+    }
+
+    .btn {
+      margin-top: auto;
+    }
+  }
+
+  .details__container {
+    padding: 2.4rem;
+    gap: 1.2rem;
+  }
+}
